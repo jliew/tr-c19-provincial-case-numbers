@@ -1,7 +1,13 @@
 # Turkey COVID-19 Provincial Case Numbers (per 100k)
 
 Now that the Turkish Ministry of Health publishes province-level case numbers, this project makes that
-data available as a CSV file.
+data available as a CSV file and through a Tableau Web Data Connector.
+
+## Tableau WDC
+
+Connect from Tableau Desktop by using this Web Data Connector URL:
+
+`https://github.com/jliew/tr-c19-provincial-case-numbers/raw/master/tableau_wdc/turkey_case_numbers_by_province.html`
 
 ## Manual usage
 
