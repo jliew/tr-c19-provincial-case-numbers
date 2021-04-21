@@ -7,7 +7,7 @@ data available as a CSV file and through a Tableau Web Data Connector.
 
 Connect from Tableau Desktop by using this Web Data Connector URL:
 
-`https://github.com/jliew/tr-c19-provincial-case-numbers/raw/master/tableau_wdc/turkey_case_numbers_by_province.html`
+`https://jliew.github.io/tr-c19-provincial-case-numbers/tableau_wdc/turkey_case_numbers_by_province.html`
 
 ## Manual usage
 
