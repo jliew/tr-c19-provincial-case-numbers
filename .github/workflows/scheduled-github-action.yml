@@ -37,9 +37,9 @@ jobs:
     - name: Setup tr locale
       run: |
         locale -a
-        apt-get install locales -y
-        locale-gen tr_TR
-        echo "LANG=tr_TR" > /etc/default/locale
+        sudo apt-get install locales -y
+        sudo locale-gen tr_TR
+        sudo echo "LANG=tr_TR" > /etc/default/locale
         locale -a
     - name: Crawl data
       run: |
