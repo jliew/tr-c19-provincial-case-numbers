@@ -19,6 +19,6 @@ Parse the website and output some stats to stdout:
 
 `poetry run cscrawler parse_url`
 
-Parse the website and output the data in CSV format to stdout:
+Parse the website and update the specified output CSV file:
 
-`poetry run cscrawler parse_url --output-csv`
+`poetry run cscrawler --output-file data/vaka_sayısı.csv parse_url`

@@ -1,4 +1,5 @@
 import locale
+import pathlib
 import re
 
 import click
@@ -13,6 +14,36 @@ def debug_df(df):
     click.echo(df)
     click.echo(df.info())
     click.echo(df.groupby(['original_week_period', 'original_date_text', 'date']).count())
+
+
+def update_data_file(output_file, new_df):
+    """Append new data to existing data file if doesn't already exist."""
+
+    # Create new file if needed
+    f = pathlib.Path(output_file)
+    if not f.exists():
+        new_df.to_csv(output_file, index=False)
+        click.echo(f"Created new CSV file, date={new_df['date'].max()}.")
+        return
+
+    # Load existing CSV into DataFrame
+    existing_df = pd.read_csv(output_file)
+
+    if 'date' not in existing_df.columns:
+        raise Exception(f"Existing CSV file missing 'date' column.")
+
+    existing_df = existing_df.astype({
+        'data_detay': 'float',
+        'date': 'datetime64'
+    })
+
+    # Update output file with new data if date is newer
+    if new_df['date'].max() > existing_df['date'].max():
+        df = pd.concat([ existing_df, new_df ], ignore_index=True)
+        df.to_csv(output_file, index=False)
+        click.echo(f"Updated with new data, date={new_df['date'].max()}.")
+    else:
+        click.echo(f"Skipping updating data file; existing max date={existing_df['date'].max()}, new date={new_df['date'].max()}")
 
 
 def find_data(soup):
