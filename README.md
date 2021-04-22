@@ -3,6 +3,10 @@
 Now that the Turkish Ministry of Health publishes province-level case numbers, this project makes that
 data available as a CSV file and through a Tableau Web Data Connector.
 
+The data file itself is automatically updated by a crawler which runs once a day.
+
+[![Crawl website](https://github.com/jliew/tr-c19-provincial-case-numbers/actions/workflows/scheduled-github-action.yml/badge.svg)](https://github.com/jliew/tr-c19-provincial-case-numbers/actions/workflows/scheduled-github-action.yml)
+
 ## Tableau WDC
 
 Connect from Tableau Desktop by using this Web Data Connector URL:
