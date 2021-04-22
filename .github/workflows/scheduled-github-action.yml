@@ -45,4 +45,6 @@ jobs:
         poetry install
         poetry run cscrawler --output-file data/vaka_sayısı.csv parse_url
     - uses: mikeal/publish-to-github-action@master
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
