@@ -1,9 +1,9 @@
 # Turkey COVID-19 Provincial Case Numbers (per 100k)
 
-Now that the Turkish Ministry of Health publishes province-level case numbers, this project makes that
+Now that the [Turkish Ministry of Health](https://saglik.gov.tr/) publishes [province-level case numbers](https://covid19.saglik.gov.tr/), this project makes that
 data available as a CSV file and through a Tableau Web Data Connector.
 
-The data file itself is automatically updated by a crawler which runs once a day.
+The [data file itself](https://github.com/jliew/tr-c19-provincial-case-numbers/blob/master/data/vaka_say%C4%B1s%C4%B1.csv) is automatically updated by a crawler which runs once a day.
 
 [![Crawl website](https://github.com/jliew/tr-c19-provincial-case-numbers/actions/workflows/scheduled-github-action.yml/badge.svg)](https://github.com/jliew/tr-c19-provincial-case-numbers/actions/workflows/scheduled-github-action.yml)
 
