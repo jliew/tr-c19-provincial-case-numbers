@@ -7,6 +7,8 @@ The [data file itself](https://github.com/jliew/tr-c19-provincial-case-numbers/b
 
 [![Crawl website](https://github.com/jliew/tr-c19-provincial-case-numbers/actions/workflows/scheduled-github-action.yml/badge.svg)](https://github.com/jliew/tr-c19-provincial-case-numbers/actions/workflows/scheduled-github-action.yml)
 
+See https://jliew.github.io/tr-c19-provincial-case-numbers for a line chart.
+
 ## Tableau WDC
 
 Connect from Tableau Desktop by using this Web Data Connector URL:
